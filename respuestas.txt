@@ -1,0 +1,44 @@
+1. Explica la diferencia entre los operadores == y === en JavaScript.
+Respuest: 
+    los operadores == se utilizan para comparar el == es true  y el operador === es false
+
+2. ¿Qué es una declaración switch en JavaScript y cuándo es útil su uso?
+Respuesta:
+Una declaración switch en JavaScript es un comprarador que como su nombre lo indica compara 
+un valor con diferentes posibles valores y es util usarlo cuanodo se desea comparar algo con muchas coasas
+posibles.
+
+3. ¿Cuál es la diferencia entre un array y un objeto en JavaScript? Proporciona un
+ejemplo de cada uno.
+
+Respuesta:
+Un array es una estructura de datos que permite almacenar varios elementos, 
+un objeto es una representacion de el mundo ficico que tiene atributos 
+
+Array : [nombre:"Juan", edad:25, ciudad:"Bogota"]
+Objeto : {nombre: "Juan", edad: 25, ciudad: "Bogota"}
+
+mintras que en el array se almacen los datos para despues ser utlilizados en operaciones u otras tareas
+en el objeto esos mismos datos son los que le dan la caracteristica
+
+4.Explica cómo funciona el operador ternario en JavaScript y proporciona un ejemplo
+de su uso.
+
+Respuesta:
+un operador ternario es un elemento que se uza para dar la instruccion de que si no se cumple una condicion 
+se haga de otra manera un ejemplo de esto seri el if y el elementos
+es decir mientras que el if dice valide que uno sea igual a uno, se deje pasar else(de lo contrario)
+no lo dejer ingresar
+
+5. ¿Qué es un operador de comparación en JavaScript? Proporciona ejemplos de al
+menos dos operadores de comparación y explica cómo funcionan.
+
+Respuesta:
+En javascript los operadores de comparacion son el operador == y el operador ===.
+El primero solo verifica si las variables tienen el mismo valor, sin importar donde vengan de origen o de qué tipo de dato sea
+por otro lado el segundo  parametro del operador == es opcional por lo tanto puede omitirse.
+el operador === es mas estricto ya que solo devuelve verdadero si ambos lados izquierdos y derechos son exactamente iguales sin importar donde este
+
+
+
+ 
