@@ -6,24 +6,36 @@ ciclo while se utiliza para controlar la repetición hasta que el usuario adivin
 número.
 */
 
-let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 
-let intento = 1;
-let numeroUsuario = parseInt(prompt("Adivina el número secreto entre 1 y 100. Intento " + intento));
 
-while (numeroUsuario!== numeroSecreto) {
- 
-  if (numeroUsuario < numeroSecreto) {
-    alert("Demasiado bajo. Intenta de nuevo.");
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question('Adivina el número secreto entre 1 y 100: ', (numeroUsuario) => {
+
+  let intento = 1;
+  while (numeroUsuario!== numeroSecreto) {
+
+    if (numeroUsuario < numeroSecreto) {
+      console.log('Demasiado bajo. Intenta de nuevo.');
+    }
+
+    else if (numeroUsuario > numeroSecreto) {
+      console.log('Demasiado alto. Intenta de nuevo.');
+    }
+
+    intento++;
+
+    readline.question('Adivina el número secreto entre 1 y 100. Intento ' + intento + ': ', (numeroUsuario) => {
+
+    });
   }
 
-  else if (numeroUsuario > numeroSecreto) {
-    alert("Demasiado alto. Intenta de nuevo.");
-  }
 
-  intento++;
+  console.log('¡Felicidades! Adivinaste el número secreto en ' + intento + ' intentos.');
 
-  numeroUsuario = parseInt(prompt("Adivina el número secreto entre 1 y 100. Intento " + intento));
-}
-
-alert("¡Felicidades! Adivinaste el número secreto en " + intento + " intentos.");
+  readline.close();
+});
