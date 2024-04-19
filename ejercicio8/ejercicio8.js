@@ -2,14 +2,12 @@
 while y luego imprima el resultado en la consola. */
 
 let suma = 0;
-let i = 0;          
-    while (i <= 100)                                   
-    {
-        if (i % 2 == 0)
-        {
-            suma = suma + i;
-        }
-        i++;
+let i = 1;
+while (i <= 100) {
+
+    if (i % 2 == 0) {
+        suma += i;
     }
+    i++;
     console.log(suma);
-    
+}
